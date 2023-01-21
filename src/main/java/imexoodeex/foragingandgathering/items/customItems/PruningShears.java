@@ -49,7 +49,7 @@ public class PruningShears extends Item {
             if (playerEntity.isSneaking()) {
                 // prune the bush
                 int age = blockState.get(SweetBerryBushBlock.AGE);
-                if (age >= 2) {
+                if (age >= 1) {
                     // prune the bush
                     world.setBlockState(blockPos, blockState.with(SweetBerryBushBlock.AGE, 0));
                     // play sound and particle effects
